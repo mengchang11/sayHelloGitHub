@@ -1,0 +1,11 @@
+# CMake 最低版本号要求
+CMAKE_MINIMUM_REQUIRED(VERSION 3.0)
+
+# 项目名称
+PROJECT(udpserver)
+
+# 向工程添加存放源文件的子目录
+ADD_SUBDIRECTORY(src bin)
+
+MESSAGE(STATUS "This is BINARY dir " ${PROJECT_BINARY_DIR})
+MESSAGE(STATUS "This is SOURCE dir " ${PROJECT_SOURCE_DIR})
